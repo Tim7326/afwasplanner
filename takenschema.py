@@ -132,17 +132,14 @@ def file_write(datalist, weeknr):
     datenow = datetime.datetime.now()
     path = os.getcwd() + "\\Afwasplanner\\"
     print(path)
-    schedule_file = open(path + "log from " + datenow.strftime("%Y-%m-%d %H-%M-%S") + " made for week: " + str(weeknr)+".log", "w")
+    schedule_file = open(path + "log from " + datenow.strftime("%Y-%m-%d %H-%M-%S") +".log", "w")
     for i in datalist:
         schedule_file.write("day: " + str(i[0].strftime("%Y-%m-%d"))+ " name: " + i[1]+"\n" )
     schedule_file.close
     
 
-
-
-
-def add_to_archive(weeknr):
-    print("test")
+def file_open(datalist):
+    
 
 def show_schedule():
     print("Test")
